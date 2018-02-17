@@ -18,11 +18,11 @@ class Triangle
     # binding.pry
   def kind
     if !self.valid?
-      begin
+      # begin
         raise TriangleError
-      rescue TriangleError => error
-        puts error.message
-      end
+      # rescue TriangleError => error
+      #   puts error.message
+      # end
 
     elsif @length_1 == @length_2 && @length_2 == @length_3
       :equilateral
