@@ -14,7 +14,7 @@ class Triangle
       false
     end
   end
-  
+
   def kind
     if !self.valid?
       raise TriangleError
