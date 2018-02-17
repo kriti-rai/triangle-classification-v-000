@@ -26,10 +26,9 @@ class Triangle
     elsif @length_1!= @length_2 && @length_1!= @length_3 && @length_2!= @length_3
       :scalene
     end
-    binding.pry
   end
 end
-
+binding.pry
 class TriangleError < StandardError
   # def initialize
   # end
