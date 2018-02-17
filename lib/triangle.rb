@@ -9,7 +9,7 @@ class Triangle
   end
 
   def valid?
-    if (@length_1 > 0 && @length_2 > 0 && @length_3 > 0)
+    if @length_1 > 0 && @length_2 > 0 && @length_3 > 0
       true
     else
       false
@@ -20,7 +20,7 @@ class Triangle
   def kind
     if !valid?
       begin
-        raise TriangleError.new
+        raise TriangleError
       rescue TriangleError => error
         puts error.message
       end
@@ -36,8 +36,8 @@ class Triangle
 end
 
 class TriangleError < StandardError
-  def initialize
-  end
+  # def initialize
+  # end
   def message
     "It is not a valid triangle."
   end
