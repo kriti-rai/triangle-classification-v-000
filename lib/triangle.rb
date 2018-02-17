@@ -17,7 +17,7 @@ class Triangle
   end
     # binding.pry
   def kind
-    if !valid?
+    if !self.valid?
       begin
         raise TriangleError
       rescue TriangleError => error
