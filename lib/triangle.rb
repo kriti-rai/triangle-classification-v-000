@@ -1,4 +1,3 @@
-require 'pry'
 class Triangle
   attr_accessor :length_1, :length_2, :length_3
 
@@ -15,7 +14,7 @@ class Triangle
       false
     end
   end
-    # binding.pry
+  
   def kind
     if !self.valid?
       raise TriangleError
@@ -28,9 +27,8 @@ class Triangle
     end
   end
 end
+
 class TriangleError < StandardError
-  # def initialize
-  # end
   def message
     "It is not a valid triangle."
   end
