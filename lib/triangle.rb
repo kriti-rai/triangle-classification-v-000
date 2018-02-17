@@ -14,7 +14,6 @@ class Triangle
     else
       false
     end
-
   end
     # binding.pry
   def kind
