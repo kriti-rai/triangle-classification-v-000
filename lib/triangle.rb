@@ -28,7 +28,6 @@ class Triangle
     end
   end
 end
-binding.pry
 class TriangleError < StandardError
   # def initialize
   # end
